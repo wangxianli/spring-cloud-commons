@@ -13,7 +13,7 @@
 	<parent>
 		<groupId>org.springframework.cloud</groupId>
 		<artifactId>spring-cloud-build</artifactId>
-		<version>2.3.6.BUILD-SNAPSHOT</version>
+		<version>2.3.5.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<scm>
@@ -30,41 +30,20 @@
 		<evictor.version>1.0.0</evictor.version>
 	</properties>
 	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>flatten-maven-plugin</artifactId>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-eclipse-plugin</artifactId>
-				<configuration>
-					<useProjectReferences>false</useProjectReferences>
-					<additionalConfig>
-						<file>
-							<name>.settings/org.eclipse.jdt.ui.prefs</name>
-							<location>
-								${maven.multiModuleProjectDirectory}/eclipse/org.eclipse.jdt.ui.prefs
-							</location>
-						</file>
-						<file>
-							<name>.settings/org.eclipse.jdt.core.prefs</name>
-							<location>
-								${maven.multiModuleProjectDirectory}/eclipse/org.eclipse.jdt.core.prefs
-							</location>
-						</file>
-					</additionalConfig>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>io.spring.javaformat</groupId>
-				<artifactId>spring-javaformat-maven-plugin</artifactId>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-checkstyle-plugin</artifactId>
-			</plugin>
-		</plugins>
+<!--		<plugins>-->
+<!--			<plugin>-->
+<!--				<groupId>org.codehaus.mojo</groupId>-->
+<!--				<artifactId>flatten-maven-plugin</artifactId>-->
+<!--			</plugin>-->
+<!--			<plugin>-->
+<!--				<groupId>io.spring.javaformat</groupId>-->
+<!--				<artifactId>spring-javaformat-maven-plugin</artifactId>-->
+<!--			</plugin>-->
+<!--			<plugin>-->
+<!--				<groupId>org.apache.maven.plugins</groupId>-->
+<!--				<artifactId>maven-checkstyle-plugin</artifactId>-->
+<!--			</plugin>-->
+<!--		</plugins>-->
 	</build>
 
 	<reporting>
